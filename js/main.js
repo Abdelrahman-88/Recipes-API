@@ -58,10 +58,12 @@ function displayrecipes() {
         cols += `
     <div class="col-xl-3 col-lg-4 col-md-6 content">
      <div class="recipe text-center my-3">
-        <img class="w-100" src="${recipes[i].image_url}" alt="${recipes[i].title}">
-        <p class="mt-2 title" >${recipes[i].title}</p>
-        <a target="_blank" class="btn btn-info mx-1" href="${recipes[i].source_url}">Source</a>
-        <a onclick="getrecipe(\`${recipes[i].recipe_id}\`),addOverflow()" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="details btn btn-warning mx-1" href="">Details</a>
+     <a onclick="getrecipe(\`${recipes[i].recipe_id}\`),addOverflow()" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="details mx-1" href="">
+     <img class="w-100 recipe" src="${recipes[i].image_url}" alt="${recipes[i].title}"></a>
+        <p class="mt-2 title" >
+        <a target="_blank" class="mx-1 source" href="${recipes[i].source_url}"><i class="fas fa-link"></i></a>
+        ${recipes[i].title}</p>
+        
         
 
      </div>

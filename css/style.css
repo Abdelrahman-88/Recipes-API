@@ -249,6 +249,22 @@ body {
 
 /* about */
 
+.source{
+    transition: color .5s;
+}
+
+.recipe{
+    transition: transform .5s;
+}
+
+.recipe:hover{
+    transform: translateY(-5%);
+}
+
+.source:hover{
+    color: rgb(177, 0, 0) !important;
+}
+
 .modal-content{
     background-image: url(../img/Pepper\ Gourmet\ Seasoning\ Spice.jpg);
     background-position: center center;
