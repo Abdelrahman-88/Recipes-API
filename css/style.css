@@ -346,6 +346,10 @@ footer a div:hover {
     color: #fff;
 }
 
+.sub{
+    transform: translateY(-50%);
+}
+
 @media screen and (max-width:768px) {
     footer p {
         text-align: center;
